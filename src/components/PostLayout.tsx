@@ -73,19 +73,19 @@ export default function PostLayout({
             </div>
           </header>
           <div className={styles.content}>{children}</div>
-          <ul className={"tag-list"}>
+          {/* <ul className={"tag-list"}>
             {tags.map((it, i) => (
               <li key={i}>
                 <TagButton tag={getTag(it)} />
               </li>
             ))}
-          </ul>
+          </ul> */}
         </article>
         <footer>
           <div className={"social-list"}>
             <SocialList />
           </div>
-          <Copyright />
+          {/* <Copyright /> */}
         </footer>
       </div>
       <style jsx>

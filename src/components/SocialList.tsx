@@ -1,12 +1,21 @@
 import React from "react";
 import Twitter from "../assets/twitter-alt.svg";
 import GitHub from "../assets/github-alt.svg";
+import Insta from "../assets/insta-alt.svg";
 import config from "../lib/config";
 
 export function SocialList({}) {
   return (
     <div>
       <a
+        title="Instagram"
+        href={`https://instagram.com/${config.insta_account}`}
+        target="_blank"
+        rel="noopener"
+      >
+        <Insta width={24} height={24} fill={"#222"} />
+      </a>
+      {/* <a
         title="Twitter"
         href={`https://twitter.com/${config.twitter_account}`}
         target="_blank"
@@ -21,7 +30,7 @@ export function SocialList({}) {
         rel="noopener"
       >
         <GitHub width={24} height={24} fill={"#222"} />
-      </a>
+      </a> */}
       <style jsx>{`
         a {
           display: inline-block;

@@ -2,14 +2,13 @@ import React from "react";
 import Twitter from "../assets/twitter-alt.svg";
 import GitHub from "../assets/github-alt.svg";
 import Insta from "../assets/insta-alt.svg";
-import config from "../lib/config";
 
 export function SocialList({}) {
   return (
     <div>
       <a
         title="Instagram"
-        href={`https://instagram.com/${config.insta_account}`}
+        href={`https://instagram.com/universejourneyjess`}
         target="_blank"
         rel="noopener"
       >

@@ -16,17 +16,6 @@ export default function Navigation() {
               <a className={router.pathname === "/" ? "active" : null}>about</a>
             </Link>
           </li>
-          <li>
-            <Link href="/posts">
-              <a
-                className={
-                  router.pathname.startsWith("/posts") ? "active" : null
-                }
-              >
-                blog
-              </a>
-            </Link>
-          </li>
         </ul>
         <style jsx>
           {`

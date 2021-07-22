@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Navigation from "./Navigation";
+import Link from "next/link";
 
 type Props = {
   children: React.ReactNode;
@@ -14,9 +14,11 @@ export default function Layout({ children }: Props) {
         <link rel="apple-touch-icon" href="/icon.png" />
         <meta name="theme-color" content="#fff" />
       </Head>
-      <nav>
-        <Navigation />
-      </nav>
+      <Link href="/">
+        <a className="homeLink">
+          Jess's Poetry
+        </a>
+      </Link>
       <main>{children}</main>
       <style jsx>
         {`
@@ -28,11 +30,20 @@ export default function Layout({ children }: Props) {
           }
           main {
             display: flex;
+            flex-direction: column;
             min-height: 100%;
+          }
+          .homeLink {
+            margin-left: 25px;
+            font-size: 2rem;
+            color: #fd8d9f;
+            font-weight: bold;
+            margin-bottom: 25px;
           }
           @media (min-width: 769px) {
             .root {
               display: flex;
+            flex-direction: column;
               flex: 1 0 auto;
             }
             main {

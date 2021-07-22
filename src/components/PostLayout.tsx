@@ -96,12 +96,14 @@ export default function PostLayout({
               width: 100%;
               margin: 0 auto;
               padding: 0 1.5rem;
+              padding-top: 1rem;
               box-sizing: border-box;
               z-index: 0;
             }
             .metadata div {
               display: inline-block;
               margin-right: 0.5rem;
+              margin-bottom: 2em;
             }
             article {
               flex: 1 0 auto;

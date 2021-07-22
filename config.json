@@ -1,16 +1,19 @@
 {
   "base_url": "https://wutali-nextjs-netlify-blog.netlify.app",
-  "site_title": "Next.js Netlify Blog",
-  "site_description": "Next.js blog template for Netlify",
+  "site_title": "Jess's Poems",
+  "site_description": "Poems written by Jess Skinner",
   "site_keywords": [
     {
-      "keyword": "Next.js"
+      "keyword": "Poetry"
     },
     {
-      "keyword": "Netlify"
+      "keyword": "Poems"
     },
     {
-      "keyword": "React"
+      "keyword": "Jess Skinner"
+    },
+    {
+      "keyword": "universejourneyjess"
     }
   ],
   "posts_per_page": 40,
